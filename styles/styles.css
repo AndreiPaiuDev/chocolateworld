@@ -1,9 +1,14 @@
 
-#root {
-    --primary-text-color: rgba(17, 17, 17, 1);
+:root {
+    --primary-text-color: #111111;
     --secondary-text-color: rgba(255, 255, 255, 0.7);
+    --white-text-color: #FFFFFF;
     --additional-text-color: #fd9222;
-    
+}
+
+
+.taste-sensation div h1 span {
+    color: var(--additional-text-color);
 }
 /* default styles*/
 h1,
@@ -54,6 +59,11 @@ li {
     padding: 0 32px;
 }
 
+.section {
+    padding-top: 128px;
+}
+
+
 section {
     padding-bottom: 128px;
 }
@@ -81,6 +91,11 @@ section {
     padding-left: 5px;
 }
 
+.container-nav {
+    width:1200px;
+    margin: 0 auto;
+    padding: 32px;
+}
 
 .main-nav ul {
     display: flex;
@@ -100,4 +115,263 @@ section {
     display: flex;
     flex-direction: row;
     gap: 18px;
+}
+
+.btn {
+    width: fit-content;
+    height: fit-content;
+    background: var(--additional-text-color);
+    color: #FFFFFF;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 14px 40px;
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border: none;
+}
+
+.btn2 {
+    width: fit-content;
+    height: fit-content;
+    background: transparent;
+    color: var(--white-text-color);
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 14px 40px;
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border: 1px solid #FFFFFF;
+}
+
+
+/* Hero section */
+
+.hero {
+    background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 1)), 
+                      url("../images/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 1136px;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 40px;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.hero-info h1 {
+    font-family: "montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.03em;
+    color: var(--white-text-color);
+    margin-bottom: 20px; 
+}
+
+.hero-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}
+
+.hero-scroll {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.hero-scroll p {
+    background: none; 
+    font-size: 14px;
+    color: var(--white-text-color);
+}
+
+/* Benefits Section */
+
+.benefits {
+    background-color: #1E1823;
+    height: 344px;
+}
+
+.benefits-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.benefits-container {
+    width:1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px;
+}
+
+.benefits-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;   
+    width: 326px;
+    height: 266px; 
+    padding-right: 18px;
+}
+
+.benefits-card h2 {
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: var(--white-text-color);
+    padding-bottom: 18px;
+}
+
+.benefits-card p {
+    font-family: "montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    color: #FFFFFFB2;
+    
+}
+
+.border::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 263px;
+    top: 125px;
+    right: 0;
+    width: 124px;
+    height: 1px;
+    background-color: #ffffff80;
+    transform: rotate(90deg);
+}
+
+.benefits-icon {
+    border-radius: 365px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    margin-bottom: 22px;
+}
+
+/* Taste Section */
+.taste-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.taste-info h1 {
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+    text-align: center;
+    padding-bottom: 28px;
+}
+
+.taste-info span {
+    color: var(--additional-text-color);
+}
+
+.taste-info p {
+    font-family: "montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 2%;
+    color: var(--primary-text-color);
+    padding-bottom: 50px;
+    width: 486px;
+    height: fit-content;
+    text-align: center;
+}
+
+.taste-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.taste-card {
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+    gap: 19px;
+    padding: 28px 36px 82px 28px;
+}
+
+.taste-card img {
+    width: 206px;
+    height: 160px;
+}
+
+#card1 {
+    background-color: #fd9222;
+    color: var(--white-text-color);
+}
+
+#card2 {
+    background-color: var(--white-text-color);
+    color: var(--primary-text-color);
+    border: 1px solid #fd9222;
+}
+
+#card3 {
+    background-color: #1E1823;
+    color: var(--white-text-color);
+}
+
+#card4 {
+    background-color: var(--white-text-color);
+    color: var(--primary-text-color);
+    border: 1px solid #fd9222;
+}
+
+.taste-card h3 {
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding-top: 36px;
 }
