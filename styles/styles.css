@@ -1,7 +1,7 @@
 
 :root {
     --primary-text-color: #111111;
-    --secondary-text-color: rgba(255, 255, 255, 0.7);
+    --secondary-text-color: #111111B2;
     --white-text-color: #FFFFFF;
     --additional-text-color: #fd9222;
 }
@@ -25,10 +25,16 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+}
+
 *,
 *::after,
 *::before {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 img {
@@ -63,9 +69,96 @@ li {
     padding-top: 128px;
 }
 
+.title {
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+    text-align: center;
+    padding-bottom: 50px;
+}
 
-section {
-    padding-bottom: 128px;
+.title span {
+    color: var(--additional-text-color);
+}
+
+.btn {
+    width: fit-content;
+    height: fit-content;
+    background: var(--additional-text-color);
+    color: #FFFFFF;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 14px 40px;
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border: none;
+    cursor: pointer;
+}
+
+.btn2 {
+    width: fit-content;
+    height: fit-content;
+    background: transparent;
+    color: var(--white-text-color);
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 14px 40px;
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.btn3 {
+    width: fit-content;
+    height: fit-content;
+    background: transparent;
+    color: var(--primary-text-color);
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 14px 40px;
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border: 1px solid #FD9222;
+    cursor: pointer;
+}
+
+.btn4 {
+    width: fit-content;
+    height: fit-content;
+    background: var(--additional-text-color);
+    color: #FFFFFF;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 40px;
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border: none;
+    cursor: pointer;
 }
 
 /* Navigation section */
@@ -117,43 +210,9 @@ section {
     gap: 18px;
 }
 
-.btn {
-    width: fit-content;
-    height: fit-content;
-    background: var(--additional-text-color);
-    color: #FFFFFF;
-    border-radius: 100px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 14px 40px;
-    font-family: "montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    border: none;
+.logo-icon-nav {
+    fill: var(--primary-text-color);
 }
-
-.btn2 {
-    width: fit-content;
-    height: fit-content;
-    background: transparent;
-    color: var(--white-text-color);
-    border-radius: 100px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 14px 40px;
-    font-family: "montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    border: 1px solid #FFFFFF;
-}
-
-
 /* Hero section */
 
 .hero {
@@ -211,6 +270,7 @@ section {
 .benefits {
     background-color: #1E1823;
     height: 344px;
+    margin-top: 72px;
 }
 
 .benefits-wrapper {
@@ -232,8 +292,8 @@ section {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;   
-    width: 326px;
-    height: 266px; 
+    width: fit-content;
+    height: fit-content; 
     padding-right: 18px;
 }
 
@@ -297,22 +357,6 @@ section {
     justify-content: center;
 }
 
-.taste-info h1 {
-    font-family: "montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 28px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--primary-text-color);
-    text-align: center;
-    padding-bottom: 28px;
-}
-
-.taste-info span {
-    color: var(--additional-text-color);
-}
-
 .taste-info p {
     font-family: "montserrat", sans-serif;
     font-weight: 400;
@@ -320,6 +364,7 @@ section {
     line-height: 18px;
     letter-spacing: 2%;
     color: var(--primary-text-color);
+    margin-top: -22px;
     padding-bottom: 50px;
     width: 486px;
     height: fit-content;
@@ -374,4 +419,443 @@ section {
     letter-spacing: 0.02em;
     text-transform: uppercase;
     padding-top: 36px;
+}
+
+/* How its made Section  */
+.how-is-made-info {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.responsive-video{
+    border-radius: 15px;
+    max-width: 600px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.recipe-info {
+    width: 516px;
+    height: 400px;
+    background-color: #FFFFFF;
+    padding: 32px;
+    border-radius: 15px;
+}
+
+.recipe-title {
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0;
+    width: 350px;
+    height: fit-content;
+    padding-bottom: 28px;
+}
+.recipe-list {
+    list-style:disc;
+    font-family: "montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    padding-bottom: 24px;
+}
+
+.recipe {
+    margin-left:-32px;
+}
+
+.how-is-made {
+    margin: 32px;
+}
+
+/* Our Product Section */
+
+
+.product-card  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 364px;
+    background-color: #FFFFFF;
+    border-radius: 1px;
+}
+
+.prod-title {
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+    padding-top: 8px;
+}
+
+.prod-info {
+    font-family: "montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2%;
+    color: var(--secondary-text-color);
+    padding-bottom: 18px;
+    padding-top: 2px;
+}
+
+.buy-product {
+    width: 94px;
+    height: fit-content;
+    background-color: #FAFAFA;
+    border: 1px solid #1111111A;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    gap: 14px;
+    border-radius: 100px;
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+
+/* Top sellers Section */
+
+.top-sellers {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.top-seller-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;  
+    margin-top: 32px;  
+}
+
+.top-seller-info p {
+    font-family: "montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 2%;
+    color: var(--primary-text-color);
+    width: 407px;
+    height: fit-content;
+}
+
+
+/* Chocolate is loved */
+
+.chocolate-review {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.chocolate-review-list {
+    display: flex;
+    margin-top: 50px;
+}
+
+
+.chocolate-review-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    width: 360px; 
+    height: 242px;
+    border-radius: 15px;
+    background: white;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+.reviewer img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ddd;
+}
+
+
+.reviewer {
+    text-align: center;
+}
+
+
+.reviewer h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000;
+    margin-top: 10px;
+}
+
+.reviewer p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #555;
+    max-width: 300px;
+    margin: 10px auto;
+}
+
+.review-btn {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.review-pagination {
+    position: relative;
+}
+
+
+/* Explore section */
+.explore-section {
+    width: 100%;
+    height: 370px;
+    background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 1)), 
+    url("../images/bg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+.explore-container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #FFFFFF;
+}
+
+.explore-container h1 {
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+    text-align: center;
+    width: 378px;
+    height: fit-content;
+    padding-bottom: 24px;
+}
+
+.explore-container p {
+    font-family: "montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: var(--white-text-color);
+    text-align: center;
+    width: 467px;
+    height: fit-content;
+    padding-bottom: 24px;
+}
+
+/* Footer section */
+
+footer {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 32px 0;
+    background-color: #1E1823;
+    color: #FFFFFF;
+}
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 70px;
+    padding-bottom: 62px;
+}
+
+.title-footer {
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+    width: 300px;
+    height: fit-content;
+}
+
+.title-footer span {
+    color: var(--additional-text-color);
+}
+
+.footer-contact-info {
+    display: flex;
+    flex-direction: row;;
+}
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+}
+.footer-contact h3 {
+    font-family: "montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: var(--white-text-color);
+    padding-top: 18px;
+    padding-bottom: 14px;
+}
+
+.footer-contact a {
+    font-family: "montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: var(--white-text-color);
+    padding-bottom: 4px;
+}
+
+.logo-icon-footer {
+    fill: var(--white-text-color);
+}
+
+.footer-line {
+    border: 1px solid #ffffff1a;
+}
+.footer-nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: var(--white-text-color);
+    gap: 24px;
+    margin-left: -40px;
+}
+
+
+
+/* Slider design */
+
+.swiper-pagination-bullet {
+    background-color: #111111;
+    width: 13px; 
+    height: 13px; 
+    opacity: 0.1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #FD9222; 
+    opacity: 1;
+    width: 28px;
+    height: 13px;
+    border-radius: 25px;
+}
+
+.swiper-wrapper {
+    width: 1200px;
+    padding: 0 70px 55px 0;
+}
+
+
+/* Hover & Focus States */
+
+.btn:hover,
+.btn:focus {
+    background: var(--white-text-color);
+    color: var(--additional-text-color);
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.btn2:hover,
+.btn2:focus {
+    background: var(--white-text-color);
+    color: var(--additional-text-color);
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.btn3:hover,
+.btn3:focus {
+    background: var(--white-text-color);
+    color: var(--additional-text-color);
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+
+.main-nav ul li:focus,
+.main-nav ul li:hover {
+    color: var(--additional-text-color);
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.footer-nav ul li:focus,
+.footer-nav ul li:hover {
+    color: var(--additional-text-color);
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.buy-product:hover,
+.buy-product:focus {
+    background: var(--additional-text-color);
+    color: var(--white-text-color);
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.logo-icon-nav:hover,
+.logo-icon-nav:focus {
+    fill: var(--additional-text-color);
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.logo-icon-footer:hover,
+.logo-icon-footer:focus {
+    fill: var(--additional-text-color);
+    cursor: pointer;
+    transition-duration: 0.3s;
 }

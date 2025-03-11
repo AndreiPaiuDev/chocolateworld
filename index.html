@@ -7,6 +7,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <!-- Link SwiperJS CSS -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Chocolate World</title>
 </head>
@@ -22,24 +27,24 @@
             
             <nav class="main-nav">
                 <ul>
-                    <li class="nav-item">Home</li>
-                    <li class="nav-item">How it's made?</li>
-                    <li class="nav-item">Our products</li>
-                    <li class="nav-item">Top sellers</li>
-                    <li class="nav-item">Chocolate is loved</li>
+                    <li id="#home" class="nav-item">Home</li>
+                    <li id="#howismade" class="nav-item">How it's made?</li>
+                    <li id="#ourproducts" class="nav-item">Our products</li>
+                    <li id="#bestsellers" class="nav-item">Top sellers</li>
+                    <li id="#reviews" class="nav-item">Chocolate is loved</li>
                 </ul>
             </nav>
             <div class="social-nav">
                 <ul>
                     <li>
-                        <svg class="logo-icon" width="24" height="24">
-                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                        <svg class="logo-icon-nav" width="24" height="24">
+                            <use href="./images/symbol-defs2.svg#icon-instagram_icon"></use>
                         </svg>
                     </li>
                     
                     <li>
-                        <svg class="logo-icon" width="24" height="24">
-                            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                        <svg class="logo-icon-nav" width="24" height="24">
+                            <use href="./images/symbol-defs2.svg#icon-twitter_icon"></use>
                         </svg>
                     </li>
                 </ul>
@@ -48,7 +53,7 @@
     </header>
     <main>
         <!-- Hero Section -->
-        <section class="hero-section">
+        <section id="home" class="hero-section">
             <div class="hero">
                 <div class="hero-info">
                     <h1>Treat yourself or a loved one to </br>our finest ingredients for a moment </br>of pure delight!</h1>
@@ -101,10 +106,11 @@
             </div>
         </section>
 
+        <!-- Taste Sensation Section -->
         <section class="taste-sensation section">
             <div class="container">
                 <div class="taste-info">
-                    <h1>IT ALL ADDS UP TO ONE </br>EXCEPTIONAL <span>TASTE</span> SENSATION</h1>
+                    <h1 class="title">IT ALL ADDS UP TO ONE </br>EXCEPTIONAL <span>TASTE</span> SENSATION</h1>
                     <p>At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one exceptional taste sensation.</p>
                 </div>
                 
@@ -129,9 +135,261 @@
             </div>
         </section>
 
+        <!-- How is made Section -->
+         <section id="howismade" class="how-is-made section">
+            <div class="container">
+                <h1 class="title">How is <span>made</span>?</h1>
+                <div class="how-is-made-info">
+                    <video class="responsive-video" controls>
+                        <source src="/video/howismade.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <div class="recipe-info">
+                        <h2 class="recipe-title">Try  our chocolates today and discover the perfect balance of flavor</h2>
+                        <ul class="recipe">
+                            <li class="recipe-list">Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</li>
+                            <li class="recipe-list">At the same time, prepare a water bath. Melt the butter on it.</li>
+                            <li class="recipe-list">"Mix" the milk mixt class="recipe-list"ure and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.</li>
+                            <li class="recipe-list">Heat the mixture over low heat, letting it barely boil.</li>
+                            <li class="recipe-list">Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+         </section>
+         
+
+         <!-- Our products Section -->
+         <section id="ourproducts" class="our-products section">
+            <div class="container">
+                <h1 class="title">our <span>products</span>?</h1>
+                <div class="swiper">
+                    <div class="products-list swiper-wrapper">
+                        <div class="product-card swiper-slide">
+                            <img src="./images/product1.png" alt="Orange chocolate" width="230px" height="201px">
+                            <div class="prod-title">Orange</div>
+                            <div class="prod-info">Dark chocolate</div>
+                            <button class="buy-product">45 £</button>
+                        </div>
+
+                        <div class="product-card swiper-slide">
+                            <img src="./images/product2.png" alt="Apple & Cranberry chocolate" width="230px" height="201px">
+                            <div class="prod-title">APPLE&CRANBERRY</div>
+                            <div class="prod-info">Milk chocolate</div>
+                            <button class="buy-product">50 £</button>
+                        </div>
+
+                        <div class="product-card swiper-slide">
+                            <img src="./images/product3.png" alt="Lime & Sea salt chocolate" width="230px" height="201px">
+                            <div class="prod-title">lime&sea salt</div>
+                            <div class="prod-info">Dark chocolate</div>
+                            <button class="buy-product">66 £</button>
+                        </div>
+
+                        <div class="product-card swiper-slide">
+                            <img src="./images/product4.png" alt="Pineapple chocolate" width="230px" height="201px">
+                            <div class="prod-title">pineapple</div>
+                            <div class="prod-info">Dark chocolate</div>
+                            <button class="buy-product">54 £</button>
+                        </div>
+
+                        <div class="product-card swiper-slide">
+                            <img src="./images/product5.png" alt="Classic chocolate" width="230px" height="201px">
+                            <div class="prod-title">Classic</div>
+                            <div class="prod-info">Milk chocolate</div>
+                            <button class="buy-product">45 £</button>
+                        </div>
+
+                        <div class="product-card swiper-slide">
+                            <img src="./images/product6.png" alt="Honey chocolate" width="230px" height="201px">
+                            <div class="prod-title">honey</div>
+                            <div class="prod-info">Milk chocolate</div>
+                            <button class="buy-product">50 £</button>
+                        </div>
+
+                        <div class="product-card swiper-slide">
+                            <img src="./images/product7.png" alt="Roasted fruits chocolate" width="230px" height="201px">
+                            <div class="prod-title">Roasted fruits</div>
+                            <div class="prod-info">Dark chocolate</div>
+                            <button class="buy-product">66 £</button>
+                        </div>
+
+                        <div class="product-card swiper-slide">
+                            <img src="./images/product8.png" alt="Classic white chocolate" width="230px" height="201px">
+                            <div class="prod-title">Classic</div>
+                            <div class="prod-info">White chocolate</div>
+                            <button class="buy-product">54 £</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination product"></div>
+                </div>
+
+            </div>
+                
+            
+        </section>
+
+        <!-- Top Sellers -->
+        <section id="bestsellers" class="section">
+            <div class="container">
+                <h1 class="title"> <span>top</span> sellers</h1>
+                <div class="top-sellers">
+                    <div class="img-top-seller">
+                        <img src="./images/top1.png" alt="Top seller chocolate">
+                    </div>
+
+                    <div class="img-top-seller">
+                        <img src="./images/top2.png" alt="Top seller chocolate">
+                    </div>
+
+                    <div class="img-top-seller">
+                        <img src="./images/top3.png" alt="Top seller chocolate">
+                    </div>
+                </div>
+                <div class="top-seller-info">
+                    <p>Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
+                    <button class="btn">Buy now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chocolate is loved -->
+            <section id="reviews" class="section">
+                <div class="container">
+                    <h1 class="title"> <span>chocolate</span> is loved</h1>
+                    <div class="chocolate-review">
+                        <div class="review-container swiperReview">
+                            <div class="chocolate-review-list swiper-wrapper">
+
+                                <div class="chocolate-review-card swiper-slide" role="group" aria-label="1 / 6">
+                                    <div class="reviewer">
+                                        <img src="./images/customer01.jpg" alt="Reviewer">
+                                        <h3>Benjamin Whitehead</h3>
+                                        <p class="review">"I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate."</p>
+                                    </div>
+                                </div>
+
+                                <div class="chocolate-review-card swiper-slide" role="group" aria-label="2 / 6">
+                                    <div class="reviewer">
+                                        <img src="./images/customer02.jpg" alt="Reviewer">
+                                        <h3>Nora Cardenas</h3>
+                                        <p class="review">"This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good."</p>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="chocolate-review-card swiper-slide" role="group" aria-label="3 / 6">
+                                    <div class="reviewer">
+                                        <img src="./images/customer03.jpg" alt="Reviewer">
+                                        <h3>Pedro Salinas</h3>
+                                        <p class="review">" Chocolate is a family favorite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy."</p>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="chocolate-review-card swiper-slide" role="group" aria-label="4 / 6">
+                                    <div class="reviewer">
+                                        <img src="./images/customer04.jpg" alt="Reviewer">
+                                        <h3>Teddy Tate</h3>
+                                        <p class="review">"I love Chocolate World because they offer a wide selection of high-quality chocolate at an affordable price. The taste is simply unbeatable and I can't get enough!"</p>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="chocolate-review-card swiper-slide" role="group" aria-label="5 / 6">
+                                    <div class="reviewer">
+                                        <img src="./images/customer05.jpg" alt="Reviewer">
+                                        <h3>Vickie Potter</h3>
+                                        <p class="review">"I love Chocolate World because they offer a wide selection of high-quality chocolate at an affordable price. The taste is simply unbeatable and I can't get enough!"</p>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="chocolate-review-card swiper-slide" role="group" aria-label="6 / 6">
+                                    <div class="reviewer">
+                                        <img src="./images/customer06.jpg" alt="Reviewer">
+                                        <h3>Bridgette Hardin</h3>
+                                        <p class="review">"I love Chocolate World because they offer a wide selection of high-quality chocolate at an affordable price. The taste is simply unbeatable and I can't get enough!"</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="review-pagination swiper-pagination review"></div>
+
+                        </div>
+
+                        <div class="review-btn">
+                            <button class="btn3">Leave a review</button>
+                        </div>
+                </div>
+            </section>
+
+        <!-- Explore Section -->
+        <section class="section">
+            <div class="container explore-section">
+                <div class="explore-container">
+                    <h1>exPLORE OUR NEW CHOCOLATE FIRST</h1>
+                    <p>From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave you craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work of art that is sure to please.</p>
+                    <br>
+                    <button class="btn">subscribe</button>
+                </div>
+            </div>
+        </section>
+
     </main>
-    <footer>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-wrapper">
+                <h1 class="title-footer"><span>Chocolate</span> a delicious cure for a bad day</h1>
+
+                <div class="footer-contact-info">
+                    <div class="footer-contact">
+                        <h3>Contact us</h3>
+                        <a href="tel:+380 (68) 443-94-26">+380 (68) 443-94-26</a>
+                        <a href="email:order@chocolateworld.com">order@chocolateworld.com</a>
+                    </div>
+                    <div class="social-nav">
+                        <ul>
+                            <li>
+                                <svg class="logo-icon-footer" width="24" height="24">
+                                    <use href="./images/symbol-defs2.svg#icon-instagram_icon"></use>
+                                </svg>
+                            </li>
+                            
+                            <li>
+                                <svg class="logo-icon-footer" width="24" height="24">
+                                    <use href="./images/symbol-defs2.svg#icon-twitter_icon"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+            
+
+        </div>
+        <div>
+            <div class="footer-line"></div>
+            <nav class="footer-nav">
+                <ul>
+                    <li id="#home" class="nav-item">Home</li>
+                    <li id="#howismade" class="nav-item">How it's made?</li>
+                    <li id="#ourproducts" class="nav-item">Our products</li>
+                    <li id="#bestsellers" class="nav-item">Top sellers</li>
+                    <li id="#reviews" class="nav-item">Chocolate is loved</li>
+                </ul>
+            </nav>
+        </div>
+
     </footer>
-    
+
+    <!-- Linking SwiperJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking main script -->
+    <script src="./js/script.js"></script>
 </body>
 </html>
